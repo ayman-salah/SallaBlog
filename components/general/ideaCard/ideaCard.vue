@@ -4,8 +4,8 @@
       <img v-if="image" :src="image" alt="idea image" srcset="" class=" hover:opacity-[.8]"/>
     </nuxt-link>
     <div class="box-idea">
-      <h3 class="hover:text-mainColor">
-        <nuxt-link to="/article">
+      <h3 >
+        <nuxt-link  class="hover:text-mainColor" to="/article">
           {{ title }}
         </nuxt-link>
       </h3>
@@ -14,15 +14,15 @@
           {{ question }}
         </nuxt-link>
       </h2>
-      <p class="hover:text-mainColor">
-        <nuxt-link to="/article">
+      <p >
+        <nuxt-link class="hover:text-mainColor" to="/article">
           {{ info }}
         </nuxt-link>
       </p>
       <h4>
         <span class="pl-2">بواسطة</span>
-        <nuxt-link to="/article">
-          <span class="hover:text-mainColor">{{ auther }}</span>
+        <nuxt-link  class="hover:text-mainColor" to="/article">
+            {{ auther }}
         </nuxt-link>
       </h4>
     </div>

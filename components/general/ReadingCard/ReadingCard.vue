@@ -5,7 +5,7 @@
                 <img :src="image" alt="the most Reading image " class="absolute top-0 left-0 w-full h-full z-[-10] object-cover  hover:opacity-[.8]" srcset="">
             </nuxt-link>
              <nuxt-link class="hover:text-mainColor" to="/article"
-            >
+            > 
                 <h2 class="text-lg mb-3">{{title}}</h2>
             </nuxt-link>
             <nuxt-link class="hover:text-mainColor text-gray-100" to="/article"
