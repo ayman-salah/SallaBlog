@@ -1,0 +1,95 @@
+@import '@/assets/Css/Sass/variables';
+
+nav {
+  .nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    transition: all .8s;
+    @media (max-width:768px) {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background-color: #FFF;
+      width: 228px;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+      z-index: 100;
+    }
+    &.show{
+      @media (max-width:768px) {
+        left: 0;
+      }
+    }
+    li {
+      font-family: "DIN Next LT Arabic";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 25px;
+      margin-left: 50px;
+      @media (max-width:768px) {
+        a{color: #000;}
+      }
+      @media (max-width:768px) {
+        text-align: right;
+        margin: 10px 20px 10px 0px;
+      }
+     
+      a {
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-bottom: 10px;
+
+        &.nuxt-link-exact-active ,.nuxt-link-active {
+          color: $main-color;
+          position: relative;
+          &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+  }
+
+  .bar-icon {
+    display: none;
+    @media (max-width:768px) {
+      display: block;
+    }
+  }
+  .close-icon{
+    display: none;
+    @media (max-width:768px) {
+      display: block;
+    }
+  }
+  .nav-icon{
+    span{
+      color: #C6CBCA;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+  &.white-mode{
+    .nav-icon{
+      span{
+        color: #000;
+      }
+    }
+  }
+}

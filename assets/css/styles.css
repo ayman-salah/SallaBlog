@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none !important;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  border: none;
+  box-sizing: border-box;
+  font-weight: 400px;
+  transition: all 0.2s linear;
+}
+
+::selection {
+  background-color: #5DD5C4;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  transition: all 0.5s linear;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #5dd5c569;
+}
+html {
+      font-family: "Din Next LT Arabic";
+      overflow-x: hidden;
+    }
+    body{
+      font-family: "Din Next LT Arabic";
+    overflow: hidden;
+    background-color: #FCFCFC;
+  }
+  .my-container {
+    width: 1170px;
+    margin: auto;
+    @media (max-width: 1170px) {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  /* /////////////// custom transtion  */
+  .fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

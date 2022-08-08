@@ -1,0 +1,9 @@
+.moor-icon{
+    animation: left-to-right 1s linear infinite;
+}
+@keyframes left-to-right {
+   50%{
+       transform:  translate(-7px);
+   }
+}
+
