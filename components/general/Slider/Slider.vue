@@ -12,8 +12,8 @@
           <li v-for="n in 5 " :key="n" @click="CurrentSlide = `${n}`" class="w-2 h-2 rounded-full border-[1px] " :class="CurrentSlide == `${n}`  ? 'bg-mainColor border-mainColor' : 'bg-transparent border-white'"></li>
       </ul>
   <div class="my-container absolute z-20 top-2/4 left-1/2 translate-x-[-50%] flex items-center justify-between max768:hidden">
-    <img src="@/assets/images/slider-prev.png" @click="DecreasSlideIndex" class="" alt="" srcset="">
-        <img src="@/assets/images/slider-next.png" @click="IncreasSlideIndex" class="" alt="" srcset="">
+    <img src="@/assets/images/slider-prev.png" @click="DecreasSlideIndex" class="rounded-full hover:text-white hover:border-mainColor hover:bg-mainColor" alt="" srcset="">
+        <img src="@/assets/images/slider-next.png" @click="IncreasSlideIndex" class="rounded-full hover:text-white hover:border-mainColor hover:bg-mainColor" alt="" srcset="">
 </div>
   </div>
 </template>
