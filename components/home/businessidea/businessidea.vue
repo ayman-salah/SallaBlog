@@ -1,14 +1,14 @@
 <template>
   <div class="the-most-reading pt-16">
-    <div class="my-container">
-      <div class="info flex flex-row-reverse items-center justify-between">
-       <div class="">
-          <img src="@/assets/images/busineesidea/item4.png" alt="" srcset="">
+    <div class="my-container flex justify-between gap-8 flex-row-reverse max992:flex-col">
+      <div class=" flex flex-col gap-[18px] flex-grow justify-between items-center ">
+       <div class="w-full h-full">
+          <img src="@/assets/images/busineesidea/item4.png" alt="" srcset="" class="flex-1 w-full  object-cover">
          <ideaCard  class="mt-5" />
         </div>
       </div>
-      <div class="box-container">
-         <ideaCard v-for="item in busniessidea" :key="item.id" :class="'busineesidea'"
+      <div class=" flex justify-between gap-5 flex-col flex-grow items-stretch">
+         <ideaCard v-for="item in busniessidea" :key="item.id" :class="'busineesidea'" class="w-full"
           :auther="item.auther" 
           :title="item.title" 
           :question="item.question" 
@@ -32,17 +32,7 @@ export default {
     components:{
         ideaCard
     },
-  props: {
-    testprop: {
-      type: String,
-      default() {
-        return "ahmed salah";
-      },
-    },
-  }
-  
 }
 </script>
 <style lang="scss" scoped>
-@import './businessidea.scss';
 </style>

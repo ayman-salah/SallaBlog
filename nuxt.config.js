@@ -27,7 +27,7 @@ export default {
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: '/static/fonts/DINNextLTArabic-Regular-3.ttf' },
+      { rel: 'stylesheet', type:'text/css', href: '//db.onlinewebfonts.com/c/513071b47bdba774c93a73ad16a75e3b?family=DIN+Next+LT+Arabic' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css' },
      
     ]

@@ -1,4 +1,4 @@
-<template>
+<templatet>
     <div class="comment " >
         <h2 class="flex justify-between flex-row-reverse mb-2 text-sm text-heading">
             <span>{{auther}}</span>
@@ -9,7 +9,7 @@
         </h2>
         <p class="text-right text-textinfo font-normal text-sm">{{text}}</p>
           </div>
-</template>
+</templatet>
 <script  lang="ts">
 import { defineComponent } from "@vue/runtime-core";
 

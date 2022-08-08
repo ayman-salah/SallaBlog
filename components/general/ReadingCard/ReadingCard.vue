@@ -1,9 +1,9 @@
 <template>
-           <div class="box relative bg-blend-multiply bg-[#00000083]" >
+           <div class="box text-white  text-right relative bg-blend-multiply bg-[#00000083] h-64 pt-28 pb-5 pr-5 pl-6 " >
                 <img :src="image" alt="the most Reading image " class="absolute top-0 left-0 w-full h-full z-[-10] object-cover" srcset="">
-                <h2>{{title}}</h2>
-                <p>{{info}}</p>
-                <h3>
+                <h2 class="text-lg mb-3">{{title}}</h2>
+                <p class="text-base mb-3 text-gray-100">{{info}}</p>
+                <h3 class="text-sm text-gray-100 ">
                     <span class="pl-1">بواسطة</span>
                     <span>{{auther}}</span> 
                 </h3>
@@ -58,5 +58,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import './ReadingCard.scss'
+// @import './ReadingCard.scss'
 </style>

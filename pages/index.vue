@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import data from '@/assets/json/MostReading.json'
 import MostReading from "@/components/home/MostReading/MostReading.vue" ;
 import MostViews from "@/components/home/MostViews/MostViews.vue";
 import businessidea from "@/components/home/businessidea/businessidea.vue";
@@ -29,13 +28,7 @@ export default {
 
         }; 
     },
-    asyncData({$axios}){
-     return $axios.$get('https://jsonplaceholder.typicode.com/posts').then(res =>{
-      return {
-        posts: res
-      }
-     })
-    },
+   
     
     components: { MostReading, MostViews, businessidea, Strategy, Treadsidea, Slider }
 };

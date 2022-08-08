@@ -18,10 +18,10 @@
             <div class="social-links">
                 <h3>كن كاتباً معنا</h3>
                 <ul>
-                    <li><a href="#"><img src="@/assets/images/social/item1.png" alt="" srcset=""></a></li>
-                    <li><a href="#"><img src="@/assets/images/social/item2.png" alt="" srcset=""></a></li>
-                    <li><a href="#"><img src="@/assets/images/social/item3.png" alt="" srcset=""></a></li>
-                    <li><a href="#"><img src="@/assets/images/social/item4.png" alt="" srcset=""></a></li>
+                    <li><a href="https://twitter.com/"><img src="@/assets/images/social/item1.png" alt="" srcset=""></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="@/assets/images/social/item2.png" alt="" srcset=""></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="@/assets/images/social/item3.png" alt="" srcset=""></a></li>
+                    <li><a href="https://mail.google.com/"><img src="@/assets/images/social/item4.png" alt="" srcset=""></a></li>
                 </ul>
             </div>
             <p class="copy-right-text">جميع الحقوق محفوظة لشركة مدونة 2022</p>
@@ -43,7 +43,7 @@ export default {
      if (this.Email == "") swal("يجب إدخال البريد الإلكتروني","","error");
       else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.Email)))swal("يجب كتابة البريد الإكتروني بالصيغة الصحيحة","Example@Example.com","error");
       else {
-          swal("تمت الإشتراك", "تم الاشتراك بنجاح", "success");
+          swal("تم الإشتراك", "تم الاشتراك بنجاح", "success");
           this.Email = ''
       }
     },

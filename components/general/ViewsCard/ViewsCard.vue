@@ -1,11 +1,11 @@
 <template>
-    <div class="box bg-white" :class="customClass">
+    <div class="box bg-white flex justify-between gap-5 flex-col min-h-[160px] max992:min-h-fit" :class="customClass">
               <img v-if="image" :src="image" alt="the most views image" srcset="" class="h-[230px]">
-              <div class="box-view p-4">
-                  <h3>{{title}}</h3>
-                  <h2><nuxt-link to="/" class="hover:text-mainColor">{{question}}</nuxt-link> </h2>
-                  <p>{{info}}</p>
-                  <h4>
+              <div class="box-view p-4 flex-grow text-right">
+                  <h3 class="mb-3 border-r-2 border-mainColor pr-2 text-sm">{{title}}</h3>
+                  <h2 class="mb-3 text-xl text-gray-800 "><nuxt-link to="/" class="hover:text-mainColor">{{question}}</nuxt-link> </h2>
+                  <p class="mb-3 text-base text-gray-800">{{info}}</p>
+                  <h4 class="mb-3 text-sm text-gray-500 ">
                       <span class="pl-2">بواسطة</span>
                       <span>{{auther}}</span>
                   </h4>
@@ -63,5 +63,4 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-@import './ViewsCard.scss'
 </style>

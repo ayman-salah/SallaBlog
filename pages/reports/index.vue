@@ -1,7 +1,7 @@
 <template>
   <div class="my-container pt-16">
-    <h2 class="reports-title">التقارير والدراسات</h2>
-    <div class="reports">
+    <h2 class="reports-title text-4xl mb-10 text-center">التقارير والدراسات</h2>
+    <div class="reports mt-5 grid gap-7 justify-end">
       <ViewsCard
         v-for="item in Reports"
         :key="item.id"
@@ -46,16 +46,6 @@ export default {
 
 <style lang="scss">
 .reports {
-  margin-top: 18px;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  justify-content: flex-end;
-}
-.reports-title {
-  font-size: 36px;
-  line-height: 45px;
-  margin-bottom: 40px;
-  text-align: center;
 }
 </style>

@@ -5,7 +5,7 @@
            <h3 class="font-normal leading-7 text-2xl">الأكثر قراءةً</h3>
           <ShowMoor />
        </div>
-       <div class="box-container flex flex-row justify-between items-center">
+       <div class="box-container grid gap-8 mt-5 ">
           <ReadingCard v-for="item in MostReadingData" :key="item.id" :class="'busineesidea'"
           :id="item.id"
           :auther="item.auther" 
@@ -46,9 +46,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .box-container{
-    display: grid;
     grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
-    gap: 30px;
-    margin-top: 18px;
 }
 </style>
