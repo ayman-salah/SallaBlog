@@ -18,6 +18,4 @@ components:{
 
 <style lang="scss" scoped>
 @import './Strategy.scss';
-@import '@/assets/Css/Sass/variables';
-
 </style>

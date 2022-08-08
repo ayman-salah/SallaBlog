@@ -63,6 +63,5 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-@import '@/assets/Css/Sass/variables';
 @import './ideaCard.scss'
 </style>

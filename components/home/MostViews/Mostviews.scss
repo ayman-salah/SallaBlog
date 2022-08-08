@@ -46,7 +46,7 @@
                     bottom: 0;
                     width: 0;
                     height: 2px;
-                    background-color: $main-color;
+                    background-color: #5DD5C4;
                 }
 
                 &:not(.active) {
@@ -64,7 +64,7 @@
                 }
 
                 &.active {
-                    border-bottom: 2px solid $main-color;
+                    border-bottom: 2px solid #5DD5C4;
                     color: #000;
                 }
             }

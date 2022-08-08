@@ -58,6 +58,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '@/assets/Css/Sass/variables';
 @import './ReadingCard.scss'
 </style>
