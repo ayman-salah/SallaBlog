@@ -4,7 +4,7 @@
             <span>{{auther}}</span>
             <h3 class="text-gray-300 flex items-center gap-1">
                 <span class="text-sm ">منذ {{date}}</span>
-                <img  src="../../../assets/images/clock.png" alt="clock image" srcset="">
+                <img  src="@/assets/images/clock.png" alt="clock image" srcset="">
             </h3>
         </h2>
         <p class="text-right text-textinfo font-normal text-sm">{{text}}</p>
